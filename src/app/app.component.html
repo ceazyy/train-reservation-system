@@ -1,0 +1,42 @@
+<div class="container">
+  <h1>Train Seat Reservation</h1>
+
+  <div class="input-section">
+    <label for="seats">Number of seats to book (1-7):</label>
+    <input type="number" [(ngModel)]="numSeats" min="1" max="7" />
+    <button (click)="bookSeats()">Book Seats</button>
+  </div>
+
+  <div class="seating-wrapper">
+    <div class="legend">
+      <div class="legend-item">
+        <div class="seat available"></div>
+        <span>Available</span>
+      </div>
+      <div class="legend-item">
+        <div class="seat booked"></div>
+        <span>Booked</span>
+      </div>
+    </div>
+    <div class="seating-chart">
+      <div class="row" *ngFor="let row of seats; let i = index">
+        <div
+          *ngFor="let seat of row; let j = index"
+          [ngClass]="seat"
+          class="seat"
+        >
+          {{ i * 7 + j + 1 }}
+        </div>
+      </div>
+      <div class="row last-row">
+        <div
+          *ngFor="let seat of lastRow; let j = index"
+          [ngClass]="seat"
+          class="seat"
+        >
+          {{ 78 + j }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

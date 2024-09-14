@@ -1,0 +1,67 @@
+.container {
+  text-align: center;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.seating-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.seating-chart {
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.seat.available {
+  background-color: lightgreen;
+}
+
+.seat.booked {
+  background-color: lightcoral;
+}
+
+.last-row {
+  justify-content: flex-start;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.legend-item .seat {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.legend-item span {
+  font-size: 14px;
+}
