@@ -1,3 +1,3 @@
-# train-reservation-system
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/ceazyy/train-reservation-system)
+# TRAIN RESERVATION SYSTEM
+https://stackblitz.com/edit/angular-psktzv?file=src%2Fapp%2Fapp.component.ts****
+https://angular-psktzv.stackblitz.io
